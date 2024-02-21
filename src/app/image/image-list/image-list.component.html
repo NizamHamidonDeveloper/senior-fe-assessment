@@ -1,0 +1,13 @@
+  <section class="grid-container">
+    <ng-container *ngFor="let image of imageListData">
+        <div class="image__container" (click)="onClickImageView(image.link)">
+            <img class="image" [src]="image.link">
+        </div>
+    </ng-container>
+</section>
+<mat-paginator [length]="imageLists.length"
+[pageSize]="size"
+[pageIndex]="page"
+[pageSizeOptions]="[12, 24, 36]"
+(page)="onGetImageList($event)">
+</mat-paginator>

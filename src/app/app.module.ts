@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { ImageModule } from './image/image.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { ImageModule } from './image/image.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule, 
     AppRoutingModule,
     SharedModule,
     ImageModule,
