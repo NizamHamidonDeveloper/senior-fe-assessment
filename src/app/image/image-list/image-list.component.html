@@ -11,3 +11,27 @@
 [pageSizeOptions]="[12, 24, 36]"
 (page)="onGetImageList($event)">
 </mat-paginator>
+<br>
+<mat-accordion>
+
+    <mat-expansion-panel [expanded]="isExpanded ? true : false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+              Assign Task
+            </mat-panel-title>
+            <mat-panel-description>
+                Assign Task to a person
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <div *ngIf="empList.length != 0">
+
+              <mat-card class="example-card">
+                <mat-card-header>
+                  <div mat-card-avatar class="example-header-image"></div>
+                  <mat-card-title>{{empList[0].task}}</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image src="{{empList[0].link}}">
+                    </mat-card>
+          </div>
+        </mat-expansion-panel>
+</mat-accordion>

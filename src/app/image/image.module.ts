@@ -5,6 +5,7 @@ import { ImageListComponent } from './image-list/image-list.component';
 import { ImageViewComponent } from './image-view/image-view.component';
 import { ImageRoutingModule } from './image-routing.module';
 import { ImageAssignTaskListComponent } from './image-assign-task-list/image-assign-task-list.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -17,6 +18,8 @@ import { ImageAssignTaskListComponent } from './image-assign-task-list/image-ass
   imports: [
     CommonModule,
     SharedModule,
+    FormsModule,
+    ReactiveFormsModule,
     ImageRoutingModule,
   ]
 })

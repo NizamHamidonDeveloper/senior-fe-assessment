@@ -12,6 +12,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { FormsModule } from '@angular/forms';
     MatFormFieldModule,
     MatDialogModule,
     MatProgressSpinnerModule,
+    MatExpansionModule,
     MatSortModule,
     FormsModule,
     MatSelectModule,
@@ -41,6 +43,7 @@ import { FormsModule } from '@angular/forms';
     MatFormFieldModule,
     MatDialogModule,
     MatProgressSpinnerModule,
+    MatExpansionModule,
     MatSortModule,
     FormsModule,
     MatSelectModule,
